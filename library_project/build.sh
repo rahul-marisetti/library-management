@@ -3,6 +3,9 @@
 # Exit immediately if a command exits with a non-zero status.
 set -o errexit
 
+# Change directory to the Django project root
+cd library_project/
+
 # Install Python dependencies from requirements.txt
 pip install -r requirements.txt
 
