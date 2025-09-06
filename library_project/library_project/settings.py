@@ -33,7 +33,7 @@ SECRET_KEY = 'django-insecure-&!(9+pbvjqu^7^-8&$v%5e#@bie&&f&-(ggxi5ap7qfb75e70=
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = [library_management_system.onrender.com]
+ALLOWED_HOSTS = [library-management-system-gcd1.onrender.com]
 
 
 # Application definition
