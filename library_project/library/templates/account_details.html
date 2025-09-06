@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Details</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans antialiased">
+    <div class="container mx-auto mt-10 p-4">
+        <div class="bg-white rounded-xl shadow-lg p-8 max-w-2xl mx-auto">
+            <h1 class="text-3xl font-bold text-gray-800 mb-6 text-center">Account Details</h1>
+
+            <div class="space-y-4">
+                <div class="flex items-center space-x-4 p-4 bg-gray-50 rounded-lg">
+                    <span class="text-gray-500 font-semibold w-1/3">Name:</span>
+                    <span class="text-gray-800 font-medium">{{ member.name }}</span>
+                </div>
+                <div class="flex items-center space-x-4 p-4 bg-gray-50 rounded-lg">
+                    <span class="text-gray-500 font-semibold w-1/3">Email:</span>
+                    <span class="text-gray-800 font-medium">{{ member.email }}</span>
+                </div>
+                <div class="flex items-center space-x-4 p-4 bg-gray-50 rounded-lg">
+                    <span class="text-gray-500 font-semibold w-1/3">Books Borrowed:</span>
+                    <span class="text-gray-800 font-medium">{{ borrowed_books_count }}</span>
+                </div>
+                <div class="flex items-center space-x-4 p-4 bg-gray-50 rounded-lg">
+                    <span class="text-gray-500 font-semibold w-1/3">Books Returned:</span>
+                    <span class="text-gray-800 font-medium">{{ returned_books_count }}</span>
+                </div>
+            </div>
+
+            <div class="mt-8 text-center">
+                <a href="{% url 'main' %}" class="inline-block px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition">Go to Dashboard</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
